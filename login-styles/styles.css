@@ -4,6 +4,35 @@
     font-family: sans-serif;
 }
 
+body{
+    margin: 0 auto;
+    text-align: center;
+    background-color: black;
+}
+
+nav{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+    margin-right: 75px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 25px;
+    color: #ffb20f;
+}
+
+nav a:hover{
+    color: #ffb20f;
+    background-color: #972d07;
+    border-radius: 10px;
+}
+
 .hero {
     height: 100%;
     width: 100%;
