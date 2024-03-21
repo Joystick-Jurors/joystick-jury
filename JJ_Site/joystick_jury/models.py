@@ -11,6 +11,7 @@ class UserProfile(models.Model):  # TODO: Can probably customize the User class 
     profile_pic = models.ImageField(upload_to = user_directory_path)
 
 
+
 class Review(models.Model):
     user = models.ForeignKey(UserProfile, on_delete=models.CASCADE)
 
@@ -23,3 +24,11 @@ class Review(models.Model):
 
     def __str__(self):
         return self.review_title
+
+class Games(models.Model):
+    #name of the gam up to 75 alphanumeric characters long.
+    game_name = models.CharField(max_length=75)
+    release_date = models.DateTimeField("date published")
+    #publisher name up to 50 Alphanumeric characters
+    publisher = models.CharField(max_length=50)
+
