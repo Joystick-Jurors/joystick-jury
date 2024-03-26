@@ -25,9 +25,9 @@ class Review(models.Model):
     def __str__(self):
         return self.review_title
 
-class Games(models.Model):
+class Game(models.Model):
     #name of the gam up to 75 alphanumeric characters long.
-    game_name = models.CharField(max_length=75)
+    title = models.CharField(max_length=75)
     release_date = models.DateTimeField("date published")
     #publisher name up to 50 Alphanumeric characters
     publisher = models.CharField(max_length=50)

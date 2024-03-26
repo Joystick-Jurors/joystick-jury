@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Game</title>
+</head>
+<body>
+    <h1>Add Game</h1>
+    <form method="post">
+        {% csrf_token %}
+        <label for="title">Title:</label><br>
+        <input type="text" id="title" name="title"><br>
+        <label for="publisher">Publisher:</label><br>
+        <input type="text" id="publisher" name="publisher"><br>
+        <label for="published_date">Release Date:</label><br>
+        <input type="date" id="release_date" name="release_date"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
+

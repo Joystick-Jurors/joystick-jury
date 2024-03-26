@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Game List</title>
+</head>
+<body>
+    <h1>Game List</h1>
+    <ul>
+        {% for game in games %}
+            <li>{{ game.title }} by {{ game.publisher }} (Released: {{ game.release_date }})</li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'add_game' %}">Add Game</a>
+</body>
+</html>
