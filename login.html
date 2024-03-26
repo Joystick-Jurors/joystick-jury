@@ -6,6 +6,7 @@
     <title>Login and Registration</title>
     <link rel="stylesheet" href="login-styles/styles.css">
 </head>
+<body>
 
 <header>
     <nav>
@@ -16,48 +17,50 @@
     </nav>
 </header>
 
-<body>
-    <div class="hero">
-        <div class="form-box">
-             <div class="button-box">
-                <div id="btn"></div>
-                <button type="button" class="toggle-btn" onclick="login()">Log In</button>
-                <button type="button" class="toggle-btn" onclick="register()">Register</button>
-            </div>
-            <form id="login" class="input-group">
-                <input type="text" class="input-field" placeholder="User ID" required>
-                <input type="text" class="input-field" placeholder="Enter Password" required>
-                <button type="submit" class="submit-btn">Log In</button>
-            </form>
-            <form id="register" class="input-group">
-                <input type="text" class="input-field" placeholder="User ID" required>
-                <input type="email" class="input-field" placeholder="Email ID" required>
-                <input type="text" class="input-field" placeholder="Enter Password" required>
-                <button type="submit" class="submit-btn">Register</button>
-            </form>
+<div class="hero">
+    <div class="form-box">
+         <div class="button-box">
+            <div id="btn"></div>
+            <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+            <button type="button" class="toggle-btn" onclick="register()">Register</button>
         </div>
+        <form id="login" class="input-group">
+            <input type="text" class="input-field" placeholder="User ID" required>
+            <input type="text" class="input-field" placeholder="Enter Password" required>
+            <button type="submit" class="submit-btn">Log In</button>
+        </form>
+        <form id="register" class="input-group">
+            <input type="text" class="input-field" placeholder="User ID" required>
+            <input type="email" class="input-field" placeholder="Email ID" required>
+            <input type="text" class="input-field" placeholder="Enter Password" required>
+            <button type="submit" class="submit-btn">Register</button>
+        </form>
     </div>
+</div>
 
-    <script>
-    var  x = document.getElementById("login");
-    var  y = document.getElementById("register");
-    var  z = document.getElementById("btn");
+<footer>
+    <p>&copy; 2024 Joystick Jury. Idea from &copy; Letterboxd Limited</p>
+    <a href="faq.html">FAQ</a>
+    <a href="#">Site Credits</a>
+</footer>
 
-    function register(){
-        x.style.left = "-400px";
-        y.style.left = "50px";
-        z.style.left = "110px";
-    }
+<script>
+var x = document.getElementById("login");
+var y = document.getElementById("register");
+var z = document.getElementById("btn");
 
-    function login(){
-        y.style.left = "450px";
-        z.style.left = "0";
-        x.style.left = "50px";
-    }
+function register(){
+    x.style.left = "-400px";
+    y.style.left = "50px";
+    z.style.left = "110px";
+}
 
-    </script>
-
-
+function login(){
+    y.style.left = "450px";
+    z.style.left = "0";
+    x.style.left = "50px";
+}
+</script>
 
 </body>
 </html>
