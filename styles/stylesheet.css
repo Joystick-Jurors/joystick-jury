@@ -34,3 +34,47 @@ nav a:hover{
     text-decoration: none;
     font-size: 25px;
 }
+
+.homepagereviews{
+    display: grid;
+    grid-template-columns: 5% 1fr 1fr 1fr 1fr 5%;
+    grid-row-gap: 75px;
+    justify-content: center;
+    align-items: center;
+}
+
+#photo1{
+    grid-column: 2/3;
+}
+
+#photo2{
+    
+    grid-column: 3/4;
+}
+#photo3{
+    grid-column: 4/5;
+}
+
+#photo4{
+    grid-column: 5/6;
+}
+
+#photo5{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+#photo6{
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+#photo7{
+    grid-column: 4/5;
+    grid-row: 2/3;
+}
+
+#photo8{
+    grid-column: 5/6;
+    grid-row: 2/3;
+}
