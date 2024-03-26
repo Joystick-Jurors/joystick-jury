@@ -1,10 +1,20 @@
 /* Color pallet:  https://coolors.co/582707-972d07-cc0e00-ffb20f-ffe548*/
 
 
+:root{
+    --heading-font: "Roboto Slab", sans-serif;
+    --paragraph-font: 'Ubuntu', Helvetica, sans-serif; 
+}
+
+
+
+
 body{
     margin: 0 auto;
     text-align: center;
     background-color: black;
+    /* font-family: 'Ubuntu', Helvetica, sans-serif; */
+    
 }
 
 nav{
